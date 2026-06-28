@@ -9,3 +9,24 @@ main {
     margin: 0 auto;
 }
 
+.hidden {
+    display: none;
+}
+
+nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: space-around;
+
+    padding: 12px;
+    background: white;
+    border-top: 1px solid #ddd;
+}
+
+body {
+    padding-bottom: 70px;
+}

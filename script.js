@@ -204,3 +204,32 @@ addItemButton.addEventListener("click", function() {
     itemType.value = "priority";
 });
 renderItems();
+
+
+const remindersPage = document.getElementById("reminders-page");
+const homePage = document.getElementById("home-page");
+const structurePage = document.getElementById("structure-page");
+
+const remindersButton = document.getElementById("reminders-button");
+const homeButton = document.getElementById("home-button");
+const structureButton = document.getElementById("structure-button");
+
+function showPage(pageToShow) {
+    remindersPage.classList.add("hidden");
+    homePage.classList.add("hidden");
+    structurePage.classList.add("hidden");
+
+    pageToShow.classList.remove("hidden");
+}
+
+remindersButton.addEventListener("click", function() {
+    showPage(remindersPage);
+});
+
+homeButton.addEventListener("click", function() {
+    showPage(homePage);
+});
+
+structureButton.addEventListener("click", function() {
+    showPage(structurePage);
+});
