@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexis OS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+
+    <main>
+        <h1>Alexis OS</h1>
+
+        <h2 id="today-date"></h2>
+        <p id="greeting"></p>
+
+        <p>
+            <strong>Today's plans:</strong>
+            <span id="my-plans">No plans today.</span>
+        </p>
+
+        <p id="priorities-line">
+            <strong>Today's priorities:</strong>
+            <span id="important-reminders">You're all caught up.</span>
+        </p>
+
+        <section>
+            <h2>Structure</h2>
+            <p id="structure-message">Remember to take care of yourself.</p>
+
+            <details open>
+                <summary>Morning</summary>
+                <ul>
+                    <li><input type="checkbox" class="structure-task"> Get out of bed</li>
+                    <li><input type="checkbox" class="structure-task"> Meds (9:00 AM)</li>
+                    <li><input type="checkbox" class="structure-task"> Brush teeth</li>
+                    <li><input type="checkbox" class="structure-task"> Change clothes</li>
+                </ul>
+            </details>
+
+            <details open>
+                <summary>Afternoon</summary>
+                <ul>
+                    <li><input type="checkbox" class="structure-task"> Walk for 20 mins</li>
+                    <li><input type="checkbox" class="structure-task"> Eat lunch</li>
+                    <li><input type="checkbox" class="structure-task"> Drink water</li>
+                </ul>
+            </details>
+
+            <details open>
+                <summary>Evening</summary>
+                <ul>
+                    <li><input type="checkbox" class="structure-task"> Shower</li>
+                    <li><input type="checkbox" class="structure-task"> Eat dinner</li>
+                    <li><input type="checkbox" class="structure-task"> Meds (9:00 PM)</li>
+                </ul>
+            </details>
+        </section>
+
+        <section id="reminders-page">
+            <h2>Reminders</h2>
+
+            <input id="reminder-input" type="text" placeholder="Add something...">
+
+            <select id="item-type">
+                <option value="priority">Priority</option>
+                <option value="plan">Plan</option>
+            </select>
+
+            <input id="item-date" type="date">
+
+            <button id="add-reminder">+</button>
+
+            <ul id="reminder-list"></ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
